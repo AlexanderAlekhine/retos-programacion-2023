@@ -6,11 +6,9 @@ def get_input():
     try:
         global answer
         answer = float(input('Respuesta: '))
-        return answer
+        return answer # Este return no es necesario.
     except ValueError:
-        answer = False
-        return answer
-
+        pass
 if __name__ == '__main__':
     signs = {'suma':'+', 'resta':'-', 'multipicación':'*', 'división':'/'}
     count = 0
